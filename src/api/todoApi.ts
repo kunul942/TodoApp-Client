@@ -4,7 +4,7 @@ import { getEnvVariables } from '../helpers';
 const { VITE_API_URL } = getEnvVariables();
 
 const todoApi = axios.create({
-    baseURL: VITE_API_URL,
+    baseURL: `${VITE_API_URL}/api`,
 });
 
 //*Necessary for TOKEN authentication */

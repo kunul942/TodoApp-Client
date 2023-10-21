@@ -8,8 +8,8 @@ import usuario from '../../assets/usuario.png';
 import { io } from 'socket.io-client';
 import { useAuthStore } from '../../hooks';
 import { ChatMessages } from './ChatMessages';
-
-const socket = io('http://localhost:4000');
+// const socket = io('http://localhost:4000');
+const socket = io('https://todo-backend-jcjg.onrender.com');
 
 export default () => {
     const { onInputChange, onResetForm, formState } = useForm({
